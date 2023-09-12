@@ -3,7 +3,7 @@
 let user_info = document.getElementById('user_info');
 let result = "";
 
-fetch('https://randomuser.me/api/?results=20')
+fetch('https://randomuser.me/api/?results=5')
 .then(response => response.json())
 .then(data => {
     console.log(data.results[0].picture.large);
